@@ -1,14 +1,17 @@
-#iclude "main.h"
+#include "main.h"
 
 /**
- * print_numbers - print numbers
+ * print_numbers - print numbers from 0 to 9
+ *
  */
 
 void print_numbers(void)
 {
-	int z;
+	int a;
 
-	for (z = 0; z < 10; z++)
-		_putchar(x + '0');
+	for (a = 0; a < 10; a++)
+	{
+		_putchar(a + '0');
+	}
 	_putchar('\n');
 }
