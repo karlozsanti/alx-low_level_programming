@@ -6,7 +6,7 @@
  *
  * @str: string to put twice
  */
-void puts2(char * str)
+void puts2(char *str)
 {
 	int len, i;
 
