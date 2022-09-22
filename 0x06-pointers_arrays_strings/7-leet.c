@@ -7,21 +7,20 @@
  */
 char *leet(char *x)
 {
-	int a = 0, b, l = 5;
-	char tr[5] = {'A', 'E', 'O', 'T', 'L'};
-	char trw[5] = {'4', '3' '0', '7', '1'};
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int n;
+	int m;
 
-	while (x[a])
+	for (n = 0; x[n] != '\0'; n++)
 	{
-		b = 0;
-
-		while (b < l)
+		for (m = 0; alphaArr[m] != '\0'; m++)
 		{
-			if (x[a] == tr[b] || x[a] - 32 == tr[b])
-				x[a] == trw[b];
-			b++;
+			if (x[n] == alphaArr[m])
+			{
+				x[n] = alphaArr[m + 1];
+				break;
+			}
 		}
-		a++;
 	}
 	return (x);
 }
