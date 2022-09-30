@@ -1,7 +1,8 @@
-Write a program that prints its name, followed by a new line.
+Write a program that multiplies two numbers.
 
 
 
-If you rename the program, it will print the new name, without having to compile it again
+Your program should print the result of the multiplication, followed by a new line
 
-You should not remove the path before the name of the program
+You can assume that the two numbers and result of the multiplication can be stored in an integer
+
