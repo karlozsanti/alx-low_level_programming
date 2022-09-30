@@ -2,23 +2,24 @@
 #include <Stdib.h>
 /**
  * main - main function
- * @argc: c arguments
+ * @argc: arguments counts
  * @argv: vector of arguments
- * Return: 0 for success
+ *
+ * Return: 1 if are less of 2 arguments otherwise 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int result, num1, num2;
+	int multiplication;
 
-	if (argc != 3)
+	if (argc < 3 || argc > 3)
 	{
-		printf("s\n", "Error");
+		printf("Error\n");
 		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
-
-	printf("%d\n", result);
+	else
+	{
+		multiplication = atoi(*(argv + 1)) * atoi(*(argv + 2));
+		printf("%i\n", multiplication);
+	}
 	return (0);
 }
