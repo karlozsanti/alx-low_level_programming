@@ -4,16 +4,21 @@
  * main - main function
  * @argc: c arguments
  * @argv: vector of arguments
- * Return: alway 0
+ * Return: 0 for success
  */
 int main(int argc, char *argv[])
 {
-	if (argc == 3)
+	int result, num1, num2;
+
+	if (argc != 3)
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-		return (0);
+		printf("s\n", "Error");
+		return (1);
 	}
-	else
-		printf("Error\n");
-	return (1);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+
+	printf("%d\n", result);
+	return (0);
 }
