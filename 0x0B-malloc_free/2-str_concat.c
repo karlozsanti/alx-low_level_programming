@@ -1,6 +1,6 @@
-#include "main.h"
+i#include "main.h"
 #include <stdio.h>
-#include <Stdlib.h>
+#include <stdlib.h>
 /**
  * str_concat - concatenates strings
  * @s1: string 1
