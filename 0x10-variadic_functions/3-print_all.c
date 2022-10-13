@@ -66,12 +66,12 @@ void print_all(const char * const format, ...)
 		{"i", print_i},
 		{"s", print_s},
 		{"f", print_f},
-		{NULL, NULL}
+		{NULL, NULL},
 	};
 
 	va_start(anyArgs, format);
 	i = 0;
-	while (format != NULL && format[i])
+	while (format[i])
 	{
 		j = 0;
 		while (ops[j].f != NULL)
@@ -87,5 +87,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	va_end(anyArgs);
+
 }
